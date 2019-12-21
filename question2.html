@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<p>Long number 1 :<span id="demo"></span> </p>
+<p>Small number 2 :<span id="demo2"></span> </p>
+
+<script>
+var points = [4, 50, 6, 200, 1325, 240];
+document.getElementById("demo").innerHTML = Max(points);
+
+function Max(arr) {
+  return Math.max.apply(null, arr);
+}
+</script>
+<script>
+var points = [60, 7, 90, 30, 26, 20];
+document.getElementById("demo2").innerHTML = myArrayMin(points);
+
+function myArrayMin(arr) {
+  return Math.min.apply(null, arr);
+}
+</script>
+
+  </body>
+</html>
